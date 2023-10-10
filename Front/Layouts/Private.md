@@ -1,0 +1,1 @@
+Ce composant affiche l'ensemble des espaces et projets privée auquel l'utilisateur à accès

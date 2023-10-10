@@ -1,0 +1,1 @@
+Ce composant affiche tous les espaces et projets publiques
