@@ -1,4 +1,5 @@
-Cette librairie est dédié à l'ensemble des fonctions du viewer
+La librairie Ifcjs est une des librairie interne du projet BIM Cloud.
+Cette librairie rescence toutes les fonctions créer pour accompagné la scène du project-viewer.
 
 Services liée :
 
@@ -23,5 +24,9 @@ Composant liée :
  - [[Report-topics]]
  - [[Report-pdf]]
  - [[Spatial-tree]]
- - [[Topics]]
+ - [[Topics-list]]
+ - [[Topic-form]]
+ - [[Topic-viewer]]
+ - [[Topic-Edit]]
+ - [[Comment-Edit]]
  - [[Ifcjs-viewer]]
