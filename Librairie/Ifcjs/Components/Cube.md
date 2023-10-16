@@ -1,1 +1,0 @@
-Ce composant est utilisé pour générer le cube miniature en haut à droite de la scène.
