@@ -8,6 +8,8 @@ Services liée :
 Modèles liée :
 - [[Comment]]
 - [[Direction]]
+- [[OrthogonalCamera]]
+- [[PerspectiveCamera]]
 - [[Point]]
 - [[Librairie/BCF/Modèles/Topic]]
 - [[Viewpoint]]

@@ -506,4 +506,3 @@ private handleGlobalClick(): void
 
 Méthode retournant une erreur si l'item de la visionneuse n'est pas trouvé
 private notFoundError(item: string): void
-

@@ -18,12 +18,12 @@
             }
           },
           {
-            "id": "5767d4f2d193ce33",
+            "id": "82d4acf8191bf117",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Librairie/Ifcjs/Service/Ifc Service.md",
+                "file": "Librairie/BCF/Modèles/OrthogonalCamera.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Librairie/Ifcjs/Service/Ifc Service.md",
+                "file": "Librairie/BCF/Modèles/OrthogonalCamera.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Librairie/Ifcjs/Service/Ifc Service.md",
+                "file": "Librairie/BCF/Modèles/OrthogonalCamera.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Librairie/Ifcjs/Service/Ifc Service.md"
+                "file": "Librairie/BCF/Modèles/OrthogonalCamera.md"
               }
             }
           }
@@ -157,35 +157,35 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "5767d4f2d193ce33",
+  "active": "82d4acf8191bf117",
   "lastOpenFiles": [
+    "Librairie/BCF/Modèles/PerspectiveCamera.md",
+    "Librairie/BCF/Modèles/Point.md",
+    "Librairie/BCF/Modèles/Snapshot.md",
+    "Librairie/BCF/Modèles/Topic.md",
+    "Librairie/BCF/Modèles/Viewpoint.md",
+    "Librairie/BCF/Services/Comments-service.md",
+    "Librairie/BCF/Services/Topics-service.md",
+    "Librairie/BCF/Services/Viewpoints-service.md",
+    "Librairie/BCF/Modèles/Comment.md",
+    "Librairie/BCF/Modèles/OrthogonalCamera.md",
+    "BimSnippet.md",
+    "Librairie/BCF/Modèles/BimSnippet.md",
+    "Librairie/BCF/Modèles/Direction.md",
+    "Librairie/BCF/BCF.md",
+    "Front/Bimcloud-space/Bimcloud-project/Sans titre.md",
+    "Librairie/Ifcjs/Service/Ifc Service.md",
     "Front/Bimcloud-space/Bimcloud-project/Bimcloud-project.md",
     "Front/Bimcloud-space/Bimcloud-project/Edit-project.md",
     "Front/Bimcloud-space/Bimcloud-project/Project-topic.md",
     "Front/Bimcloud-space/Bimcloud-project/Project-members-management.md",
     "Front/Bimcloud-space/Bimcloud-project/Project-dashboard.md",
-    "Librairie/Ifcjs/Service/Ifc Service.md",
     "Librairie/Ifcjs/Service/Preferences Service.md",
     "Librairie/Ifcjs/Components/Properties-table.md",
     "Librairie/Ifcjs/Components/Import-file.md",
     "Librairie/Ifcjs/Components/Categories.md",
     "Librairie/Ifcjs/Components/Cube/CubeControl.md",
-    "Librairie/Ifcjs/Components/Cube/BoxCube.md",
-    "Front/Layouts/Private.md",
-    "Front/Layouts/Public.md",
-    "Front/Bimcloud-space/Bimcloud-space.md",
-    "Front/Bimcloud-space/Project-viewer.md",
-    "readme.md",
-    "Librairie/Ifcjs/Components/Ifcjs-viewer.md",
-    "Librairie/Ifcjs/Ifcjs.md",
     "Librairie/Ifcjs/Components/Cube",
-    "Librairie/Ifcjs/Service/Topic Service.md",
-    "Librairie/Ifcjs/Service/Viewer-facade.md",
-    "Librairie/Ifcjs/Components/Topics/Comment-Edit.md",
-    "Librairie/Ifcjs/Components/Topics/Topic-Edit.md",
-    "Librairie/Ifcjs/Components/Topics/Topic-form.md",
-    "Librairie/Ifcjs/Components/Topics/Topic-viewer.md",
-    "Librairie/Ifcjs/Components/Topics/Topics-list.md",
     "Librairie/Ifcjs/Components/Topics",
     "Librairie/Ifcjs/Components/Reports",
     "Front/Bimcloud-space/Bimcloud-project",
