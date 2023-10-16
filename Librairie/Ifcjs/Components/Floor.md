@@ -1,6 +1,7 @@
-Ce composant affiche tous les niveaux de tous les composants et permet d'activer le plan de coupe associé à ce niveau.
+### Ce composant affiche tous les niveaux de tous les composants et permet d'activer le plan de coupe associé à ce niveau.
 
-Tableau des niveaux
+
+###### **Tableau des niveaux**
 floors: Array<{
 	id: number; 
 	name: string; 
@@ -13,24 +14,24 @@ floors: Array<{
 	}>; 
 }>
 
-Tableau des subscriptions
+###### **Tableau des subscriptions**
 subscriptions: Subscription[]
 
-Définit si un plan de coupe est actif ou non
+###### **Définit si un plan de coupe est actif ou non**
 isPlanView: boolean
 
-Service utilisé :
-- [[Ifc Service]]
-- [[Viewer-facade]]
-- BimcloudSpaceService
-- [[Topic Service]]
-- LoadingService
+Constructeur :
+- private [[Ifc Service]]
+- private [[Viewer-facade]]
+- private BimcloudSpaceService
+- private [[Topic Service]]
+- private LoadingService
 
-Remplit le tableau des niveaux lors de l'initialisation du composant.
+###### **Remplit le tableau des niveaux lors de l'initialisation du composant.**
 openFloor(): void
 
-Affiche la coupe du model par rapport au niveau choisis.
+###### **Affiche la coupe du model par rapport au niveau choisis.**
 setLookAtFloor(index: number, expressID: string, name: string, type: string): void
 
-Arrête la coupe du model.
+###### **Arrête la coupe du model.**
 exitPlanView(): void

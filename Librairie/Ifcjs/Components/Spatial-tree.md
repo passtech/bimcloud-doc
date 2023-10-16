@@ -1,5 +1,9 @@
-Ce composant génère l'arborescence de chaque modèles chargés dans le viewer.
+### Ce composant génère l'arborescence de chaque modèles chargés dans le viewer.
 
-Services utilisé:
-- [[Ifc Service]]
-- [[Viewer-facade]]
+Constructeur :
+- private BimcloudSpaceService
+- private [[Ifc Service]]
+- private DbService
+- public LoadingService
+- public [[Viewer-facade]]
+- private ChangeDetectorRef

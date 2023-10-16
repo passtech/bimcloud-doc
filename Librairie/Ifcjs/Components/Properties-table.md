@@ -1,5 +1,8 @@
-Ce composant affiche les détailles de l'éléments choisie.
+### Ce composant affiche les détailles de l'éléments choisie.
 
-Service utilisé :
-- [[Ifc Service]]
-- [[Viewer-facade]]
+Constructeur :
+- private [[Ifc Service]]
+- private [[Viewer-facade]]
+- private DbService
+- private ChangeDetectorRef
+- private ActivateRoute

@@ -1,13 +1,13 @@
-Ce service s'occupe de la gestion des topics.
+### Ce service s'occupe de la gestion des topics.
 
 
-Définit si une projection du marqueur peut-être créer (utile pour [[Topic-form]] et [[Topic-Edit]])
+###### **Définit si une projection du marqueur peut-être créer (utile pour [[Topic-form]] et [[Topic-Edit]])**
 isProjected: boolean
 
-Table des topics
+###### **Table des topics**
 localTopics: Topic[]
 
-Table des marqueurs
+###### **Table des marqueurs**
 markers: Array<{
 
     projectName: string;
@@ -15,20 +15,20 @@ markers: Array<{
     modelLabel: THREE.Sprite;
 }>
 
-Le nom de l'utilisateur
+###### **Le nom de l'utilisateur**
 author: string
 
-L'index du projet
+###### **L'index du projet**
 projectId: string
 
-Table des subscriptions
+###### **Table des subscriptions**
 subscriptions: Subscription[]
 
-Services utilisé :
-- AuthFacade
-- [[Viewer-facade]]
+Constructeur :
+- private AuthFacade
+- private [[Viewer-facade]]
 
-Créer un marqueur dans la scène
+###### **Créer un marqueur dans la scène**
 createMesh(
 
     intersec: THREE.Intersection,
@@ -38,7 +38,7 @@ createMesh(
     date?: Date
 ): Mesh | undefined
 
-Gère la rotation du marqueur selon la surface
+###### **Gère la rotation du marqueur selon la surface**
 setMeshRotation(
 
     intersec: THREE.Intersection,
@@ -46,7 +46,7 @@ setMeshRotation(
     marker: Mesh<SphereGeometry | ConeGeometry, THREE.MeshStandardMaterial>
 ): Mesh
 
-Permet de recréer les marqueurs des topics déjà enregistré
+###### **Permet de recréer les marqueurs des topics déjà enregistré**
 reCreateMesh(
 
     viewpoint: Viewpoint,
@@ -56,20 +56,20 @@ reCreateMesh(
     date: Date
 ): Mesh | undefined
 
-Sélectionne le marqueur du topic
+###### **Sélectionne le marqueur du topic**
 selectMarker(topicId: string): void
 
-Déselectionne le marqueur du topic
+###### **Déselectionne le marqueur du topic**
 deselectMarker(topicId: string): void
 
-Affiche le label du marqueur
+###### **Affiche le label du marqueur**
 markerTextHover(mesh: Mesh): void
 
-Emêche d'afficher le label du marqueur
+###### **Emêche d'afficher le label du marqueur**
 noHover(): void
 
-Supprime le marqueur du topic
+###### **Supprime le marqueur du topic**
 deleteTopic(topicId: string, scene: Scene): void
 
-Récupère l'index du topic pour trouver le marqueur qui correspond
+###### **Récupère l'index du topic pour trouver le marqueur qui correspond**
 getId(topicId: string): number

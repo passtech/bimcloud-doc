@@ -1,6 +1,6 @@
-Ce composant permet de visualiser les détailles de chaque type d'élément dans chaque modèles.
+### Ce composant permet de visualiser les détailles de chaque type d'élément dans chaque modèles.
 
-Les données récupérer depuis le composant [[Reports]]
+###### **Les données récupérer depuis le composant [[Reports]]**
 @Input() datas: Array<{
 
     name: string;
@@ -21,8 +21,8 @@ Les données récupérer depuis le composant [[Reports]]
     isDetails: boolean;
   }>
 
-Détermine si les datas possèdent des détailles
+###### **Détermine si les datas possèdent des détailles**
 gotDetails: boolean
 
-Génération d'un fichier excel avec sheetjs
+###### **Génération d'un fichier excel avec sheetjs**
 generateExcel(data: any)

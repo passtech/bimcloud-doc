@@ -1,6 +1,6 @@
-Ce composant permet de télécharger le fichier dxf d'un niveau du model choisi
+### Ce composant permet de télécharger le fichier dxf d'un niveau du model choisi
 
-Stockage des plans des models
+###### **Stockage des plans des models**
 allViewPlans: Array<{
 
     id: number;
@@ -9,19 +9,19 @@ allViewPlans: Array<{
     allPlans: Array<{ name: string; plan: string }>;
   }>
 
-Tableau des subscritpions
+###### **Tableau des subscritpions**
 subscriptions: Subscription[]
 
-Service utilisé :
-- [[Ifc Service]]
-- BimcloudSpaceService
-- [[Topic Service]]
-- LoadingService
+Constructeur :
+- private [[Ifc Service]]
+- private BimcloudSpaceService
+- private [[Topic Service]]
+- public LoadingService
 
-Récupère tous les plans de tous les models chargé dans le viewer
+###### **Récupère tous les plans de tous les models chargé dans le viewer**
 getAllPlans(): void
 
-Créer les informations essentielle à la création du fichier DXF
+###### **Créer les informations essentielle à la création du fichier DXF**
 startExport(
 
 	modelID: number,
@@ -31,7 +31,7 @@ startExport(
     type: string
 ): void
 
-Créer le fichier DXF
+###### **Créer le fichier DXF**
 drawProjectedItems(
 
     storey: any,

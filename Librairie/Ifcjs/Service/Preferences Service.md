@@ -1,51 +1,51 @@
-Ce service permet de modifier et d'actualiser tous les paramètres de la scène.
+### Ce service permet de modifier et d'actualiser tous les paramètres de la scène.
 
-Permet de récupérer les paramètres enregistré
+###### **Permet de récupérer les paramètres enregistré**
 settings$: Observable</ISettings>;
 
-Les paramètres utilisé pour enregistré les nouvelles préférences de l'utilisateur
+###### **Les paramètres utilisé pour enregistré les nouvelles préférences de l'utilisateur**
 localSettings: ISettings | undefined;
 
-Les paramètres utilisé
+###### **Les paramètres utilisé**
 parameters: {[key: string]: any}
 
-Les paramétres par défaut
+###### **Les paramétres par défaut**
 defaultParameters: {[key: string]: any}
 
-Contrôle l'affichage de l'axe dans la scène
+###### **Contrôle l'affichage de l'axe dans la scène**
 axesStatus: boolean
 
-Contrôle l'affichage de la grille dans la scène
+###### **Contrôle l'affichage de la grille dans la scène**
 gridStatus: boolean
 
-Permet de vérifier si l'utilisateur est connecter
+###### **Permet de vérifier si l'utilisateur est connecter**
 isConnected$: Observable</boolean>;
 
-Table des subscritpions
+###### **Table des subscritpions**
 subscriptions: Subscription[]
 
 
-Services utilisé :
-- SettingsFacade
--  [[Ifc Service]]
-- AuthFacade
+Constructeur :
+- private SettingsFacade
+- private [[Ifc Service]]
+- private AuthFacade
 
-Change la couleur de l'axe x
+###### **Change la couleur de l'axe x**
 changeXColor(debut?: number[], fin?: number[])
 
-Change la couleur de l'axe z
+###### **Change la couleur de l'axe z**
 changeZColor(debut?: number[], fin?: number[])
 
-Change la couleur de l'axe y
+###### **Change la couleur de l'axe y**
 changeYColor(debut?: number[], fin?: number[])
 
-Change la taille de l'axe
+###### **Change la taille de l'axe**
 changeAxesLength(length: number)
 
-Met à jour l'axe helper de la scène
+###### **Met à jour l'axe helper de la scène**
 renderAxes()
 
-Change les paramètres de la grille
+###### **Change les paramètres de la grille**
 changeGridPreference(
 
 	gridLength?: number, 
@@ -53,38 +53,38 @@ changeGridPreference(
 	gridColor?: THREE.Color
 )
 
-Change la couleur et l'opacité de la présélection
-changePreselectionPreference(color?: number, opacity?: number)
+###### **Change la couleur et l'opacité de la présélection**
+changePreselectionPreference(color?: number, opacity?: number): void
 
-Change la couleur et l'opacité de la sélection
-changeSelectionPreference(color?: number, opacity?: number)
+###### **Change la couleur et l'opacité de la sélection**
+changeSelectionPreference(color?: number, opacity?: number): void
 
-Change la couleur et l'opacité du surlignage
-changeHighlightPreference(color?: number, opacity?: number)
+###### **Change la couleur et l'opacité du surlignage**
+changeHighlightPreference(color?: number, opacity?: number): void
 
-Change la couleur du fond du viewer
-changeBackgroundPreference(color: THREE.Color)
+###### **Change la couleur du fond du viewer**
+changeBackgroundPreference(color: THREE.Color): void
 
-Permet de faire un render après avoir charger les nouvelles préférences
-renderScene()
+###### **Permet de faire un render après avoir charger les nouvelles préférences**
+renderScene(): void
 
-Permet de charger toutes les préférences à la création du viewer
+###### **Permet de charger toutes les préférences à la création du viewer**
 loadPreferences(parameters: {[key: string]: any}): void
 
-Récupère les nouvelles préférences et les sauvegardes.
+###### **Récupère les nouvelles préférences et les sauvegardes.**
 saveParameters(newParameters: {[key: string]: any}): void
 
-Changement de l'état de l'axe
+###### **Changement de l'état de l'axe**
 changeStateAxes(): void
 
-Changement de l'état de la grille
+###### **Changement de l'état de la grille**
 changeStateGrid(): void
 
-Créer les MeshMaterial pour la pre-séléction, la séléction et le surlignage
+###### **Créer les MeshMaterial pour la pre-séléction, la séléction et le surlignage**
 private newMaterial(color: number, opacity: number): MeshLambertMaterial
 
-Récupère les paramètres
+###### **Récupère les paramètres**
 getParameters(): {[key: string]: any}
 
-Vérifie que les paramètres sont correctement créer
+###### **Vérifie que les paramètres sont correctement créer**
 isWrongParameters(givenParameters: {[key: string]: any}): {[key: string]: any}

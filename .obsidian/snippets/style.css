@@ -1,0 +1,33 @@
+.cm-s-obsidian .cm-header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  overflow: visible;
+}
+
+.cm-header-1:not(.cm-formatting),
+h1 {
+  text-shadow: 0 0 0.5em var(--accent-1);
+}
+
+.cm-header-2:not(.cm-formatting),
+h2 {
+  text-shadow: 0 0 0.5em var(--accent-2);
+}
+
+.cm-header-3:not(.cm-formatting),
+h3 {
+  color: rgb(76, 204, 204)
+}
+
+strong, .cm-s-obsidian span.cm-formatting-strong, .cm-s-obsidian span.cm-strong {
+  color:  rgb(0, 176, 0);
+}
+
+i, em, span.cm-em{
+  color: red
+}
