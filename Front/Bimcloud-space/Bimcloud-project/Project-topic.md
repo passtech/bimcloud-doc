@@ -1,11 +1,14 @@
-Ce composant affiche toutes les informations des annotations enregistré dans le projet.
+### Ce composant affiche toutes les informations des annotations enregistré dans le projet.
 
+
+
+###### **Le projet**
 @Input() project: Project;
 
-Variables stockant les options des graphiques qui leurs sont associés
-GRAP_RADUIS: number[] = [80, 100];
+###### **Variables stockant les options des graphiques qui leurs sont associés**
+- GRAP_RADUIS: number[] = [80, 100];
 
-BASE_GRAPH_OPTIONS: EChartsOption = {
+- BASE_GRAPH_OPTIONS: EChartsOption = {
 
     tooltip: {
       trigger: 'item',
@@ -21,40 +24,38 @@ BASE_GRAPH_OPTIONS: EChartsOption = {
     ],
 };
 
-statusOptions: EChartsOption = {};
 
-priorityOptions: EChartsOption = {};
+###### **Les options des graphiques**
+- statusOptions: EChartsOption = {};
+- priorityOptions: EChartsOption = {};
+- typeOptions: EChartsOption = {};
 
-typeOptions: EChartsOption = {};
+###### **Variables stockant le thème des graphiques qui leurs sont associés**
+- priorityTheme = { color: ['#C6C6CF', '#40A9E1', '#F7C81E', '#ED190C'] }
+- statusTheme = { color: ['#C6C6CF', '#40A9E1', '#F7C81E', '#ED190C'] }
+- typeTheme = { color: ['#C6C6CF', '#40A9E1', '#F7C81E', '#ED190C'] }
 
-Variables stockant le thème des graphiques qui leurs sont associés
-priorityTheme = { color: ['#C6C6CF', '#40A9E1', '#F7C81E', '#ED190C'] }
-statusTheme = { color: ['#C6C6CF', '#40A9E1', '#F7C81E', '#ED190C'] }
-typeTheme = { color: ['#C6C6CF', '#40A9E1', '#F7C81E', '#ED190C'] }
-
-Permet de connaître la langue choisie par l'utilisateur
+###### **Permet de connaître la langue choisie par l'utilisateur**
 currentLang: string
 
-Permet de stocker tous les subscribe
+###### **Permet de stocker tous les subscribe**
 subscriptions: Subscription[]
 
-Stocke tous les topics. localTopics est modifiable. baseLocalTopics n'est pas modifiable.
-localTopics: Topic[]
+###### **Stocke tous les topics. localTopics est modifiable. baseLocalTopics n'est pas modifiable.**
+- localTopics: Topic[]
+- baseLocalTopics: Topic[]
 
-baseLocalTopics: Topic[]
-
-Stocke l'ordre actuel des topics.
+###### **Stocke l'ordre actuel des topics.**
 orderMode = 0;
 
-Si true, affiche le container des filtres
+###### **Si true, affiche le container des filtres**
 isFiltered = false;
 
-Permet de stocker le titre rechercher dans la barre de recherche.
+###### **Permet de stocker le titre rechercher dans la barre de recherche.**
 searchedTitle = '';
 
-Stocke les filtres renseigné dans le contained des filtres
-
-  filters = {
+###### **Stocke les filtres renseigné dans le contained des filtres**
+filters = {
 
     priority: 'No-priority',
     status: 'No-status',
@@ -63,7 +64,7 @@ Stocke les filtres renseigné dans le contained des filtres
     creationDate: new Date(),
 };
 
-Informations affichées dans la table de la liste des fichiers
+###### **Informations affichées dans la table de la liste des fichiers**
 displayedColumns: string[] = [
 
     'Image',
@@ -77,53 +78,53 @@ displayedColumns: string[] = [
     'Comments',
 ];
 
-Services utilisé :
-- LangFacade
-- [[Topics-service]]
-- BCFBIMCloudService
-- [[Ifc Service]]
-- ChangeDetectorRef
-- TranslatePipe
-- [[Viewpoints-service]]
-- Router
-- ActivatedRoute
+Constructeur :
+- private LangFacade
+- private [[Topics-service]]
+- private BCFBIMCloudService
+- private [[Ifc Service]]
+- private ChangeDetectorRef
+- private TranslatePipe
+- private [[Viewpoints-service]]
+- private Router
+- private ActivatedRoute
 
 
-Initialise tous les graphiques
+###### **Initialise tous les graphiques**
 initGraphs(): void
 
-Simule un clique sur l'input.
+###### **Simule un clique sur l'input.**
 openFile(fileInput: HTMLInputElement): void
 
-Importe un fichier BCF
+###### **Importe un fichier BCF**
 importBCF(e: any): void
 
-Export un fichier BCF
+###### **Export un fichier BCF**
 exportBCF():void
 
-Lors d'un click sur un des graphiques, change le filtre associé au graphique
-onPriorityChartClick(e: any); void
-onStatusChartClick(e: any): void
-onTypeChartClick(e: any): void
+###### **Lors d'un click sur un des graphiques, change le filtre associé au graphique**
+- onPriorityChartClick(e: any): void
+- onStatusChartClick(e: any): void
+- onTypeChartClick(e: any): void
 
-Change le mode de filtrage
+###### **Change le mode de filtrage**
 changeOrderFilter(mode: number)
 
-Change le mode de triage des topics
+###### **Change le mode de triage des topics**
 orderFilter(): void
 
-Change les filtres de la priorité, du status, du type et de la date lorsque l'on appuie sur le bouton rechercher dans la fenètre des filtres.
+###### **Change les filtres de la priorité, du status, du type et de la date lorsque l'on appuie sur le bouton rechercher dans la fenètre des filtres.**
 changeElementFilter(reset?: boolean): void
 
-Récupère le titre insérer dans la barre de recherche
+###### **Récupère le titre insérer dans la barre de recherche**
 getSearchedTitle(e: any): void
 
-Filtre les topics
+###### **Filtre les topics**
 FilterTopics(closeWindow?: boolean): void
 
-Active/Désactive la fenètre des filtres
-showFilters(): void
-hideFilters(): void
+###### **Active/Désactive la fenètre des filtres**
+- showFilters(): void
+- hideFilters(): void
 
-Change la route vers le [[Project-viewer]] en établissant un chemin vers le composant [[Topics-list]]
+###### **Change la route vers le [[Project-viewer]] en établissant un chemin vers le composant [[Topics-list]]**
 viewTopic(topicId: string): void

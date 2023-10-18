@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "path:Librairie/Ifcjs  ",
@@ -29,16 +29,16 @@
       }
     }
   ],
-  "collapse-display": false,
-  "showArrow": false,
+  "collapse-display": true,
+  "showArrow": true,
   "textFadeMultiplier": -2.5,
   "nodeSizeMultiplier": 1.65677083333333,
   "lineSizeMultiplier": 3.59635416666667,
-  "collapse-forces": false,
+  "collapse-forces": true,
   "centerStrength": 0.447916666666667,
   "repelStrength": 13.5416666666667,
   "linkStrength": 1,
   "linkDistance": 30,
-  "scale": 0.5087618855792697,
+  "scale": 0.7132754626224579,
   "close": false
 }

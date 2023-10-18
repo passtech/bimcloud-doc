@@ -13,3 +13,4 @@ Modèles liée :
 - [[Point]]
 - [[Librairie/BCF/Modèles/Topic]]
 - [[Viewpoint]]
+- [[Snapshot]]

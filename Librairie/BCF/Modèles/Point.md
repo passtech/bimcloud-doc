@@ -1,4 +1,4 @@
-Le modèle d'un point
+### Le modèle d'un point
 
 x: number;
 y: number;

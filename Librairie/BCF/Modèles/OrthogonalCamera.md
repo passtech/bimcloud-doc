@@ -1,4 +1,4 @@
-Le modèle d'une caméra orthogonale
+### Le modèle d'une caméra orthogonale
 
 camera_view_point?: [[Point]];
 camera_direction?: [[Direction]];

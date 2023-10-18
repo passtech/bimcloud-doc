@@ -1,7 +1,7 @@
-Permet d'ajouter, de récupérer, de manipuler et de supprimer les [[Viewpoint]]
+### Permet d'ajouter, de récupérer, de manipuler et de supprimer les [[Viewpoint]]
 
 
-Récupère tous les viewpoints
+###### **Récupère tous les viewpoints**
 public bcfVersionProjectsProjectIdTopicsTopicIdViewpointsGet(
 
 	version: string, 
@@ -11,7 +11,7 @@ public bcfVersionProjectsProjectIdTopicsTopicIdViewpointsGet(
 	reportProgress?: boolean
 ): Observable<Array</Viewpoint>>
 
-Créer un viewpoint
+###### **Créer un viewpoint**
 public bcfVersionProjectsProjectIdTopicsTopicIdViewpointsPost(
 
 	body: Viewpoint, 
@@ -22,7 +22,7 @@ public bcfVersionProjectsProjectIdTopicsTopicIdViewpointsPost(
 	reportProgress?: boolean
 ): Observable</Viewpoint>
 
-Récupérer les bitmaps d'un viewpoint
+###### **Récupérer les bitmaps d'un viewpoint**
 public bcfVersionProjectsProjectIdTopicsTopicIdViewpointsViewpointIdBitmapsBitmapIdGet(
 
 	version: string, 
@@ -34,7 +34,7 @@ public bcfVersionProjectsProjectIdTopicsTopicIdViewpointsViewpointIdBitmapsBitma
 	reportProgress?: boolean
 ): Observable</Blob>;
 
-Récupère les composents coloriés
+###### **Récupère les composents coloriés**
 public bcfVersionProjectsProjectIdTopicsTopicIdViewpointsViewpointIdColoringGet(
 
 	version: string, 
@@ -45,7 +45,7 @@ public bcfVersionProjectsProjectIdTopicsTopicIdViewpointsViewpointIdColoringGet(
 	reportProgress?: boolean
 ): Observable<Coloring[]>
 
-Supprime un viewpoint
+###### **Supprime un viewpoint**
 public bcfVersionProjectsProjectIdTopicsTopicIdViewpointsViewpointIdDelete(
 
 	version: string, 
@@ -56,7 +56,7 @@ public bcfVersionProjectsProjectIdTopicsTopicIdViewpointsViewpointIdDelete(
 	reportProgress?: boolean
 ): Observable</any>
 
-Récupère un viewpoint
+###### **Récupère un viewpoint**
 public bcfVersionProjectsProjectIdTopicsTopicIdViewpointsViewpointIdGet(
 
 	version: string, 
@@ -67,7 +67,7 @@ public bcfVersionProjectsProjectIdTopicsTopicIdViewpointsViewpointIdGet(
 	reportProgress?: boolean
 ): Observable</Viewpoint>
 
-Récupère les composents séléctionnés
+###### **Récupère les composents séléctionnés**
 public bcfVersionProjectsProjectIdTopicsTopicIdViewpointsViewpointIdSelectionGet(
 
 	version: string, 
@@ -78,7 +78,7 @@ public bcfVersionProjectsProjectIdTopicsTopicIdViewpointsViewpointIdSelectionGet
 	reportProgress?: boolean
 ): Observable</ComponentList>
 
-Récupère le [[Snapshot]] d'un viewpoint
+###### **Récupère le [[Snapshot]] d'un viewpoint**
 public bcfVersionProjectsProjectIdTopicsTopicIdViewpointsViewpointIdSnapshotGet(
 
 	version: string, 
@@ -89,7 +89,7 @@ public bcfVersionProjectsProjectIdTopicsTopicIdViewpointsViewpointIdSnapshotGet(
 	reportProgress?: boolean
 ): Observable</Blob>
 
-Récupère la visibilité des composants
+###### **Récupère la visibilité des composants**
 public bcfVersionProjectsProjectIdTopicsTopicIdViewpointsViewpointIdVisibilityGet(
 
 	version: string, 

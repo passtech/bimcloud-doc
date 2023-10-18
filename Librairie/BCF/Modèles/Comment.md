@@ -1,37 +1,37 @@
-Le modèle d'un commentaire
+### Le modèle d'un commentaire
 
-L'index
+###### **L'index**
 guid?: string;
 
-La date
+###### **La date**
 date?: string;
 
-L'auteur
+###### **L'auteur**
 author?: string;
 
-Le commentaire
+###### **Le commentaire**
 comment: string;
 
-La priorité
+###### **La priorité**
 priority: string;
 
-L'index du topic à qui il est lié
+###### **L'index du topic à qui il est lié**
 topic_guid?: string;
 
-L'index du viewpoint qui est lié au commentaire
+###### **L'index du viewpoint qui est lié au commentaire**
 viewpoint_guid?: string;
 
-L'index du Commentaire à qui il répond
+###### **L'index du Commentaire à qui il répond**
 reply_to_comment_guid?: string;
 
-La date de la modification
+###### **La date de la modification**
 modified_date?: string;
 
-L'auteur de la modification
+###### **L'auteur de la modification**
 modified_author?: string;
 
-Les autorisations
+###### **Les autorisations**
 authorization?: CommentAuthorization;
 
-Le viewpoint (Cette variable n'enregistre et ne recupère aucun information depuis la BDD)
+###### **Le viewpoint** *(Cette variable n'enregistre et ne recupère aucune information depuis la BDD)*
 viewpoint?: [[Viewpoint]];

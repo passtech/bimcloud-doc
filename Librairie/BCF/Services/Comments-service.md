@@ -1,7 +1,7 @@
-Permet d'ajouter, de récupérer, de manipuler et de supprimer les [[Comment]]
+### Permet d'ajouter, de récupérer, de manipuler et de supprimer les [[Comment]]
 
 
-Supprime un commentaire
+###### **Supprime un commentaire**
 bcfVersionProjectsProjectIdTopicsTopicIdCommentsCommentIdDelete(
 
 	version: string, 
@@ -13,7 +13,7 @@ bcfVersionProjectsProjectIdTopicsTopicIdCommentsCommentIdDelete(
 ): Observable</any>
 
 
-Récupère un commentaire
+###### **Récupère un commentaire**
 public bcfVersionProjectsProjectIdTopicsTopicIdCommentsCommentIdGet(
 
 	version: string, 
@@ -24,7 +24,7 @@ public bcfVersionProjectsProjectIdTopicsTopicIdCommentsCommentIdGet(
 	reportProgress?: boolean
 ): Observable</Comment>
 
-Modifie un commentaire
+###### **Modifie un commentaire**
 public bcfVersionProjectsProjectIdTopicsTopicIdCommentsCommentIdPut(
 
 	body: Comment, 
@@ -36,7 +36,7 @@ public bcfVersionProjectsProjectIdTopicsTopicIdCommentsCommentIdPut(
 	reportProgress?: boolean
 ): Observable</Comment>
 
-Récupère tous les commentaires appartement au topic
+###### **Récupère tous les commentaires appartement au topic**
 public bcfVersionProjectsProjectIdTopicsTopicIdCommentsGet(
 
 	version: string, 
@@ -48,7 +48,7 @@ public bcfVersionProjectsProjectIdTopicsTopicIdCommentsGet(
 	reportProgress?: boolean
 ): Observable<Array</Comment>>
 
-Créer un nouveau commentaire
+###### **Créer un nouveau commentaire**
 public bcfVersionProjectsProjectIdTopicsTopicIdCommentsPost(
 
 	body: Comment, 

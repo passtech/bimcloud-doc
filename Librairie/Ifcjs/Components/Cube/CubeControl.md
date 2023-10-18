@@ -1,18 +1,19 @@
 ### Ce composant sert à générer tous les contrôles lié au cube
 
 
-scene: Scene
-width: number
-height: number;
+###### **Élement de la scène**
+- scene: Scene
+- width: number
+- height: number;
 
-camera: OrthographicCamera;
-ambientLight: AmbientLight;
+- camera: OrthographicCamera;
+- ambientLight: AmbientLight;
 
-renderer: WebGLRenderer;
+- renderer: WebGLRenderer;
 
-boxCube: [[BoxCube]];
+- boxCube: [[BoxCube]];
 
-rayCaster: Raycaster;
+- rayCaster: Raycaster;
 
 ###### **Coordonnée de la souris**
 mouse: Vector2

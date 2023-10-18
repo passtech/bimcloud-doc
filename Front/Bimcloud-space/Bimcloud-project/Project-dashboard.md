@@ -1,18 +1,18 @@
-Ce composant montre un récapitulatif des détailles du projet.
+### Ce composant montre un récapitulatif des détailles du projet.
 
 
-Le projet
+###### **Le projet**
 @Input() project: Project;
 
-Nombre de fichiers, membres et topics du projet
+###### **Nombre de fichiers, membres et topics du projet**
 nbFiles = 0
 nbMembers = 0
 nbTopics = 0
 
-Rayon du graphique
+###### **Rayon du graphique**
 GRAP_RADUIS: number[] = [80, 100]
 
-Options de base du graphique
+###### **Options de base du graphique**
 BASE_GRAPH_OPTIONS: EChartsOption = {
 
     tooltip: {
@@ -29,15 +29,15 @@ BASE_GRAPH_OPTIONS: EChartsOption = {
     ],
  }
 
-Options et thème du graphique
+###### **Options et thème du graphique**
 priorityOptions: EChartsOption = {}
 priorityTheme = { color: ['#ED190C', '#F7C81E', '#40A9E1'] }
 
-Services utilisé :
-- [[Ifc Service]]
-- [[Topics-service]]
-- TranslatePipe
+Constructeur :
+- private [[Topics-service]]
+- private [[Ifc Service]]
+- private TranslatePipe
 
 
-Initialise le dashboard
+###### **Initialise le dashboard**
 initDashboard(): void

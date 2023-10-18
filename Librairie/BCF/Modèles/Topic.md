@@ -1,66 +1,67 @@
-Le modèle d'un topic
+### Le modèle d'un topic
 
-L'index
+###### **L'index**
 guid?: string;
 
-L'index du serveur
+###### **L'index du serveur**
 server_assigend_id?: string;
 
-Le type
+###### **Le type**
 topic_type?: string;
 
-Le status
+###### **Le status**
 topic_status?: string;
 
-Les liens de références
+###### **Les liens de références**
 reference_links?: Array</string>;
 
-Le titre
+###### **Le titre**
 title: string;
 
-La priorité
+###### **La priorité**
 priority?: string;
 
-
+###### *À remplir*
 index?: number;
 
-Les labels
+###### **Les labels**
 labels?: Array</string>;
 
-La date de création
+###### **La date de création**
 creation_date: string;
 
-L'auteur qui à créer le topic
+###### **L'auteur qui à créer le topic**
 creation_author: string;
 
-La date de la dernière modification
+###### **La date de la dernière modification**
 modified_date?: string;
 
-L'auteur de la dernière modification
+###### **L'auteur de la dernière modification**
 modified_author?: string;
 
-À qui il est assigné
+###### **À qui il est assigné**
 assigned_to?: string;
 
+*À remplir*
 stage?: string;
 
-La description
+###### **La description**
 description?: string;
 
-Le BimSnippet
+###### **Le BimSnippet**
 bim_snippets?: BimSnippet;
 
-La date de rendu
+###### **La date de rendu**
 due_date?: string;
 
-Les authorisations
+###### **Les authorisations**
 authorization?: TopicAuthorization;
 
-Les [[Comment]]
+###### **Les [[Comment]]**
 comments?: [[Comment]][];
 
-Le [[Viewpoint]] (Cette variable n'enregistre et ne recupère aucun information depuis la BDD)
+###### **Le [[Viewpoint]]** *(Cette variable n'enregistre et ne recupère aucune information depuis la BDD)*
 viewpoint?: [[Viewpoint]];
 
-Les [[Viewpoint]]
+###### **Les [[Viewpoint]]**
 viewpoints?: [[Viewpoint]][];

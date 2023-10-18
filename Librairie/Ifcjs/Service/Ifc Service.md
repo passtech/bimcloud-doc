@@ -195,6 +195,12 @@ subscribeOnSelect(
     action: (id: number, modelID?: number, viewerFile?: ViewerFile) => void
 ): void
 
+###### **Sauvegarde les éléments pdf**
+savePdfElements(orderElementPdf: Array<{url?: string; name?: string; data?: HTMLTableElement; }>): void
+
+###### **Retourne les éléments pdf**
+getPdfElements(): Array<{url?: string; name?: string; data?: HTMLTableElement; }>
+
 **Chargement d'un fichier IFC dans la visionneuse
 évènement :**
 - **1 - chargement modèle à partir d'un fichier IFC**

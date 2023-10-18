@@ -1,31 +1,31 @@
-Le modèle d'un viewpoint
+### Le modèle d'un viewpoint
 
-
+*À remplir*
 index?: number;
 
-L'index
+###### **L'index**
 guid?: string;
 
-La camera orthogonale
+###### **La camera orthogonale**
 orthogonal_camera?: [[OrthogonalCamera]];
 
-La camera perspective
+###### **La camera perspective**
 perspective_camera?: [[PerspectiveCamera]];
 
-Les lignes
+###### **Les lignes**
 lines?: Array</Line>;
 
-Les plans de coupes
+###### **Les plans de coupes**
 clippingPlanes?: Array</ClippingPlane>;
 
-Les bitmaps
+###### **Les bitmaps**
 bitmaps?: Array</Bitmap>;
 
-Le snapshot
+###### **Le snapshot**
 snapshot?: [[Snapshot]];
 
-Les authorisations
+###### **Les authorisations**
 authorization?: ViewpointAuthorization;
 
-Les composants
+###### **Les composants**
 components?: Components;

@@ -1,7 +1,7 @@
-Permet d'ajouter, de récupérer, de manipuler et de supprimer les [[Topic]]
+### Permet d'ajouter, de récupérer, de manipuler et de supprimer les [[Topic]]
 
 
-Récupère tous les topics
+###### **Récupère tous les topics**
 public bcfVersionProjectsProjectIdTopicsGet(
 
 	version: string,
@@ -15,7 +15,7 @@ public bcfVersionProjectsProjectIdTopicsGet(
 ): Observable<Array</Topic>>
 
 
-Créer un nouveau topic
+###### **Créer un nouveau topic**
 public bcfVersionProjectsProjectIdTopicsPost(
 
 	body: Topic, 
@@ -25,7 +25,7 @@ public bcfVersionProjectsProjectIdTopicsPost(
 	reportProgress?: boolean
 ): Observable</Topic>;
 
-Supprime un topic
+###### **Supprime un topic**
 public bcfVersionProjectsProjectIdTopicsTopicIdDelete(
 
 	version: string, 
@@ -35,7 +35,7 @@ public bcfVersionProjectsProjectIdTopicsTopicIdDelete(
 	reportProgress?: boolean
 ): Observable</any>
 
-Rcupère un topic
+###### **Récupère un topic**
 public bcfVersionProjectsProjectIdTopicsTopicIdGet(
 
 	version: string, 
@@ -45,7 +45,7 @@ public bcfVersionProjectsProjectIdTopicsTopicIdGet(
 	reportProgress?: boolean
 ): Observable</Topic>
 
-Modifie un topic
+###### **Modifie un topic**
 public bcfVersionProjectsProjectIdTopicsTopicIdPut(
 
 	body: Topic, 
