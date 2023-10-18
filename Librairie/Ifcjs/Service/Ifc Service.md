@@ -479,25 +479,25 @@ changeProjectionState(bool: boolean): void
 **Evenement lorsqu'il y a un clique dans le container du viewer
 Sélectionne un élément sur la visonneuse
 Ferme la modal du context menu si elle est ouverte**
-private async handleClick(event: MouseEvent): void
+private handleClick = async (event: MouseEvent): void
 
 **Évenement déclenché lorsque l'on clique dans le cube viewer**
-private async handleCubeClick(): void
+private handleCubeClick = async (): void
 
 **Lorsque le click est enclenché, on actives les fonctions dans la boucle**
-private async handleMouseDown(): void
+private handleMouseDown = async (): void
 
 **Affichage d'un menu contextuel quand il y a un clic droit**
-private async handleContextMenu(event: Event): void
+private handleContextMenu = async (event: Event): void
 
 **Evenement lorsqu'il y a un double clic dans le container du viewer**
-async handleDoubleClick(): void
+async handleDoubleClick = (): void
 
 **Evenement lorsqu'il y a il y a passage de la souris dans le container du viewer**
-private handleMouseMove(event: MouseEvent): void
+private handleMouseMove = (event: MouseEvent): void
 
 **Evenement lorsqu'il y a il y a passage de la souris**
-private handleGlobalMouseMove(): void
+private handleGlobalMouseMove = (): void
 
 **Peut-importe ou le clique se fait, cette évènement se déclenche**
 private handleGlobalClick(): void
